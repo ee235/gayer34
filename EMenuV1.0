@@ -1,0 +1,189 @@
+--GUI Made by Avious
+--Scripts NOT by me
+
+local EMenuv10 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local owl = Instance.new("TextButton")
+local underline = Instance.new("TextLabel")
+local close = Instance.new("TextBox")
+local infyield = Instance.new("TextButton")
+local Dex = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Fps = Instance.new("TextButton")
+local OpenButton = Instance.new("Frame")
+local opener = Instance.new("TextButton")
+
+--Properties:
+
+EMenuv10.Name = "EMenu v1.0"
+EMenuv10.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = EMenuv10
+Main.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Main.BorderColor3 = Color3.fromRGB(53, 7, 16)
+Main.BorderSizePixel = 5
+Main.Position = UDim2.new(0.0428426266, 0, 0.740786254, 0)
+Main.Size = UDim2.new(0, 333, 0, 162)
+Main.Visible = false
+Main.Style = Enum.FrameStyle.RobloxRound
+Main.Active = true
+Main.Draggabled = true
+
+title.Name = "title"
+title.Parent = Main
+title.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.267267257, 0, -0.0123456717, 0)
+title.Size = UDim2.new(0, 138, 0, 23)
+title.Font = Enum.Font.SciFi
+title.Text = "EMenu v1.0"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 18.000
+title.TextWrapped = true
+
+owl.Name = "owl"
+owl.Parent = Main
+owl.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+owl.BackgroundTransparency = 0.400
+owl.BorderColor3 = Color3.fromRGB(38, 60, 76)
+owl.BorderSizePixel = 2
+owl.Position = UDim2.new(0.0208496451, 0, 0.254686892, 0)
+owl.Size = UDim2.new(0, 134, 0, 23)
+owl.Font = Enum.Font.SourceSansSemibold
+owl.Text = "OwlHub"
+owl.TextColor3 = Color3.fromRGB(255, 255, 255)
+owl.TextScaled = true
+owl.TextSize = 14.000
+owl.TextWrapped = true
+owl.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+
+underline.Name = "underline"
+underline.Parent = Main
+underline.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+underline.BackgroundTransparency = 0.350
+underline.Position = UDim2.new(-0.0120120123, 0, 0.1532619, 0)
+underline.Size = UDim2.new(0, 325, 0, 7)
+underline.Font = Enum.Font.SourceSans
+underline.Text = ""
+underline.TextColor3 = Color3.fromRGB(0, 0, 0)
+underline.TextSize = 14.000
+
+close.Name = "close"
+close.Parent = Main
+close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+close.BackgroundTransparency = 0.600
+close.Position = UDim2.new(0.860000014, 0, 0.00999999978, 0)
+close.Size = UDim2.new(0, 41, 0, 21)
+close.Font = Enum.Font.SourceSansLight
+close.Text = "close"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+Main.Visible = false
+opener.Visible = true
+end)
+
+infyield.Name = "infyield"
+infyield.Parent = Main
+infyield.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+infyield.BackgroundTransparency = 0.400
+infyield.BorderColor3 = Color3.fromRGB(38, 60, 76)
+infyield.BorderSizePixel = 2
+infyield.Position = UDim2.new(0.564393163, 0, 0.254686892, 0)
+infyield.Size = UDim2.new(0, 134, 0, 23)
+infyield.Font = Enum.Font.SourceSansSemibold
+infyield.Text = "Infinite Yield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextScaled = true
+infyield.TextSize = 14.000
+infyield.TextWrapped = true
+infyield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Dex.Name = "Dex"
+Dex.Parent = Main
+Dex.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Dex.BackgroundTransparency = 0.400
+Dex.BorderColor3 = Color3.fromRGB(38, 60, 76)
+Dex.BorderSizePixel = 2
+Dex.Position = UDim2.new(0.564393163, 0, 0.50777328, 0)
+Dex.Size = UDim2.new(0, 134, 0, 23)
+Dex.Font = Enum.Font.SourceSansSemibold
+Dex.Text = "DexV4"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextScaled = true
+Dex.TextSize = 14.000
+Dex.TextWrapped = true
+Dex.MouseButton1Down:connect(function()
+loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+end)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Main
+Noclip.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Noclip.BackgroundTransparency = 0.400
+Noclip.BorderColor3 = Color3.fromRGB(38, 60, 76)
+Noclip.BorderSizePixel = 2
+Noclip.Position = UDim2.new(0.0208496302, 0, 0.50777328, 0)
+Noclip.Size = UDim2.new(0, 134, 0, 23)
+Noclip.Font = Enum.Font.SourceSansSemibold
+Noclip.Text = "Noclip (Q)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+Noclip.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ee235/gayer34/main/ss45356dfa"))();
+end)
+
+Fps.Name = "Fps"
+Fps.Parent = Main
+Fps.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Fps.BackgroundTransparency = 0.400
+Fps.BorderColor3 = Color3.fromRGB(38, 60, 76)
+Fps.BorderSizePixel = 2
+Fps.Position = UDim2.new(0.285113901, 0, 0.791723847, 0)
+Fps.Size = UDim2.new(0, 134, 0, 23)
+Fps.Font = Enum.Font.SourceSansSemibold
+Fps.Text = "Fps Booster"
+Fps.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fps.TextScaled = true
+Fps.TextSize = 14.000
+Fps.TextWrapped = true
+Fps.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ee235/gayer34/main/fpsbooster"))();
+end)
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = EMenuv10
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.Position = UDim2.new(0.860299885, 0, 0.86855036, 0)
+OpenButton.Size = UDim2.new(0, 88, 0, 36)
+OpenButton.Style = Enum.FrameStyle.RobloxRound
+OpenButton.Active = true
+OpenButton.Draggable - true
+
+opener.Name = "opener"
+opener.Parent = OpenButton
+opener.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+opener.BackgroundTransparency = 1.000
+opener.Position = UDim2.new(-0.11363636, 0, -0.583333373, 0)
+opener.Size = UDim2.new(0, 90, 0, 33)
+opener.Font = Enum.Font.SciFi
+opener.Text = "open"
+opener.TextColor3 = Color3.fromRGB(255, 255, 255)
+opener.TextScaled = true
+opener.TextSize = 14.000
+opener.TextWrapped = true
+opener.MouseButton1Down:connect(function()
+OpenButton.Visible = true
+main.visible = true
+end)
